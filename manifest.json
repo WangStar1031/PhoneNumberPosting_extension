@@ -5,12 +5,13 @@
   "description": "LinkedIn automation extension to find leads and engage with prospects.",
   "version": "1.0.5",
   "permissions": [
+    "contextMenus",
     "activeTab",
     "webRequest",
     "webRequestBlocking",
     "browsingData",
     "storage",
-    "http://app.dataway.nl/*"
+    "<all_urls>"
   ],
   "browser_action": {
     "default_icon": {
@@ -22,6 +23,7 @@
   "background": {
     "persistent": true,
     "scripts": [
+      "js/jquery.js",
       "js/background.js"
     ]
   },
